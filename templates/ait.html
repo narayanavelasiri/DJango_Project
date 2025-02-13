@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>AIT page</h1>
+<div style="display: flex; justify-content: center;">
+{% for product in products %}
+
+<div style="background-color: rgb(122, 214, 214); margin: 10px;">
+<h2>{{product.name}}</h2>
+<h3>price : {{product.price}}</h3>
+<img src="{{product.url}}" />
+</div>
+
+{% endfor %}
+</div>
+{% endblock %}

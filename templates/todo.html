@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>ENTER TODO LIST</h1>
+<form method="POST">
+    {% csrf_token %}
+    <p><input type="text" placeholder="ENTER TODO TASK" name="task">
+    </p>
+    <button>ADD</button>
+</form>
+{% endblock %}   
